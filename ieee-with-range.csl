@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
+  <info>
+    <title>IEEE with citation range</title>
+    <id>http://www.zotero.org/styles/ieee-with-range</id>
+    <link href="http://www.zotero.org/styles/ieee" rel="self"/>
+    <author>
+      <name>Modified by ChatGPT</name>
+    </author>
+    <category citation-format="numeric"/>
+    <category field="engineering"/>
+    <summary>IEEE style with support for citation range collapsing, e.g. [1–4].</summary>
+    <updated>2025-05-14T00:00:00+00:00</updated>
+  </info>
+
+  <citation collapse="citation-number">
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <bibliography>
+    <layout hanging-indent="true" delimiter=". ">
+      <text variable="citation-number" prefix="[" suffix="]"/>
+      <text variable="author"/>
+      <text variable="title" font-style="italic"/>
+      <text variable="container-title"/>
+      <text variable="issued"/>
+      <text variable="page"/>
+    </layout>
+  </bibliography>
+</style>
